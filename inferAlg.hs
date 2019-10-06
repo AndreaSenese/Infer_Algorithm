@@ -183,6 +183,3 @@ fun = Lam "x" $ Lam "y" $ Lam "z" $ App (Var "x") (App (Var "y") (Var "z"))
 
 main :: IO ()
 main = (print . getIlist . getStr .  infExps) (Cons e_id (Cons e_twice (Cons e_comp (Cons fun Nil))))
-
-      
-  
